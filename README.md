@@ -19,3 +19,10 @@ SHOW MEASUREMENTS ON [database name] - Show measurements
 SELECT [field names, or * to all] FROM "[database name]"."[Retention Policy]"."[Measurement]" WHERE time > [time in nanosecond, ex. 1552395358000000000] AND time < [time in nanosecond, ex. 1615553758000000000] - Get data between a time interval
 
 SELECT * INTO "[database name]"."[Retention Policy]"."[Measurement]" from "[database name]"."[Retention Policy]"."[Measurement]" GROUP BY [field names] - Copy time series from one measurement to another
+
+SELECT [field names, or * to all] FROM "[database name]"."[Retention Policy]"."[Measurement]" ORDER BY desc LIMIT 1 - Get the last value
+
+SELECT [field name] FROM "[database name]"."[Retention Policy]"."[Measurement]" where time >  [time in nanosecond, ex. 1552395358000000000] ORDER BY asc LIMIT 1 - Get the first value after a timstamp
+
+
+
