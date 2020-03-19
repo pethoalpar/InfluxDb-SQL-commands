@@ -14,6 +14,8 @@ SHOW RETENTION POLICIES on [database name] - Show retention policies
 
 SHOW MEASUREMENTS ON [database name] - Show measurements
 
+SHOW FIELD KEYS FROM "[database name]"."[Retention Policy]"."[Measurement]" - Show fields for a measurement
+
 ## Get time series
 
 SELECT [field names, or * to all] FROM "[database name]"."[Retention Policy]"."[Measurement]" WHERE time > [time in nanosecond, ex. 1552395358000000000] AND time < [time in nanosecond, ex. 1615553758000000000] - Get data between a time interval
